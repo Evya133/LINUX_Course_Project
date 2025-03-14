@@ -1,0 +1,21 @@
+    1  clear
+    2  nano procces_csv.sh
+    3  chmod +x process_csv.sh
+    4  ./process_csv.sh plants.csv
+    5  git add process_csv.sh
+    6  git commit -m "Q4:part 1"
+    7  git checkout main
+    8  git merge BR_Q4 -m "Merge BR_Q4"
+    9  git push -u origin main
+   10  git push -u origin BR_Q4
+   11* 
+   12  git push -u origin BR_Q4
+   13  git push -u origin main
+   14  git commit -m "Q4:part 1"
+   15  git add .
+   16  git commit -m "Q4:part 1"
+   17  git push -u origin BR_Q4
+   18  git push -u origin main
+   19  git push -u origin BR_Q4
+   20  cd Work/Q4
+   21  history > history.txt
