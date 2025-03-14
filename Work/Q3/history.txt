@@ -1,0 +1,10 @@
+    1  clear
+    2  git checkout -b BR_Q3
+    3  cd Work/Q3
+    4  nano menu.sh
+    5  chmod +x menu.sh
+    6  git checkout -b BR_CSV
+    7  ./menu.sh
+    8  nano menu.sh
+    9  ./menu.sh\
+   10  history > history.txt
