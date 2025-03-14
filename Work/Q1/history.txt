@@ -1,0 +1,28 @@
+    1  clear
+    2  mkdir -p LINUX_Course_Project/{DOWNLOADS,CODE,DATA,BACKUPS,Work/{Q1,Q2,Q3,Q4}}
+    3  cd LINUX_Course_Project
+    4  git init
+    5  wget -O DOWNLOADS/download.tar.gz https://github.com/Telhai-Git/LINUX_COURSE_WORK/archive/refs/tags/downloads.tar.gz
+    6  tar -xzvf DOWNLOADS/download.tar.gz --strip-components=1 -C DOWNLOADS
+    7  git add .
+    8  git commit -m "Initial commit"
+    9  rm DOWNLOADS/download.tar.gz
+   10  git checkout -b BR_Q1
+   11  cp -r DOWNLOADS/* CODE/
+   12  cp DOWNLOADS/*.{txt,jpg,csv} DATA/ 2>/dev/null
+   13  echo "Time: $(date)" >> Work/Q1/q1_output.txt
+   14  echo "USER DETAILS: $(grep $(whoami) /etc/passwd)" >> Work/Q1/q1_output.txt
+   15  echo "REPO: $(pwd)" >> Work/Q1/q1_output.txt
+   16  echo "GithubUrl: https://github.com/Evya133/LINUX_Course_Project.git" >> Work/Q1/q1_output.txt
+   17  echo "VERSIONID: $(grep '^VERSION_ID=' /etc/os-release | cut -d'=' -f2 | tr -d '\"')" >> Work/Q1/q1_output.txt
+   18  echo "-------------------------------------------------------------" >> Work/Q1/q1_output.txt
+   19  tree . >> Work/Q1/q1_output.txt
+   20  echo "-------------------------------------------------------------" >> Work/Q1/q1_output.txt
+   21  find ~ -type f -name "*.sh" > Work/Q1/q1_output.txt 
+   22  git add .
+   23  git commit -m "Q1: commit on BR_Q1"
+   24  git checkout main
+   25  git checkout master
+   26  git merge BR_Q1 -m "Merge BR_Q1 into main"
+   27  git log --oneline | tee git_commits.log
+   28  history > Work/Q1/history.txt
