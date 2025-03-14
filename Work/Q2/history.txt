@@ -1,0 +1,39 @@
+    1  clear
+    2  git checkout -b BR_Q2
+    3  cp CODE/plant.py Work/Q2/
+    4  pip install matplotlib
+    5  sudo apt install python3-pip
+    6  cd Work/Q2
+    7  python3 plant.py
+    8  pip install matplotlib
+    9  python3 plant.py
+   10  mkdir Diagrams_1
+   11  mv *.png Diagrams_1/
+   12  cd ..
+   13  tar -czvf BACKUPS/1_Diagrams_$(date +%Y%m%d_%H%M%S).tar.gz -C Work/Q2/Diagrams_1/ .
+   14  git add .
+   15  git commit -m "Q2 Part A"
+   16  git checkout main
+   17  git merge BR_Q2 -m "Merge BR_Q2"
+   18  nano Work/Q2/plant_plots.py
+   19  echo "matplotlib" > requirements.txt
+   20  echo "matplotlib" > requirements.txt >> Work/Q2/
+   21  echo "matplotlib" > requirements.txt >> Work/Q2
+   22  echo "matplotlib" > Work/Q2/requirements.txt
+   23  pip uninstall matplotlib -y
+   24  pip install -r requirements.txt
+   25  cd Work/Q2
+   26  pip install -r requirements.txt
+   27  python3 plant_plots.py --plant "Rose" --height 50 55 60 65 70 --leaf_count 35 40 45 50 55 --dry_weight 2.0 2.2 2.5 2.7 3.0
+   28  python3 plant_plots.py --plant "Tulip" --height 45 50 55 60 65 --leaf_count 30 35 40 45 50 --dry_weight 1.8 2.0 2.2 2.4 2.6
+   29  python3 plant_plots.py --plant "Sunflower" --height 100 105 110 115 120 --leaf_count 20 25 30 35 40 --dry_weight 4.0 4.2 4.4 4.6 4.8
+   30  mkdir 2_Diagrams
+   31  rmdir 2_Diagrams/
+   32  mkdir Diagrams_2
+   33  mv *_diagram.png Diagrams_2/
+   34  cd ..
+   35  tar -czvf BACKUPS/2_Diagrams_$(date +%Y%m%d_%H%M%S).tar.gz -C Work/Q2/2_Diagrams .
+   36  tar -czvf BACKUPS/Diagrams_2_$(date +%Y%m%d_%H%M%S).tar.gz -C Work/Q2/2_Diagrams .
+   37  tar -czvf BACKUPS/Diagrams_2_$(date +%Y%m%d_%H%M%S).tar.gz -C Work/Q2/Diagrams_2 .
+   38  tar -czvf BACKUPS/Diagrams_1_$(date +%Y%m%d_%H%M%S).tar.gz -C Work/Q2/Diagrams_1/ .
+   39  history > Work/Q2/history.txt
