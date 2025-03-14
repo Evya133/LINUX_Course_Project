@@ -1,0 +1,53 @@
+Processing started at Fri Mar 14 18:17:21 IST 2025
+Processing plant: Rose
+Output for Rose:
+/home/evya133/LINUX_Course_Project/Work/Q4/../Q2/plant_plots.py:27: UserWarning: FigureCanvasAgg is non-interactive, and thus cannot be shown
+  plt.show()
+Plant: Rose
+Heights: [50.0, 55.0, 60.0, 65.0, 70.0]
+Leaf Counts: [35, 40, 45, 50, 55]
+Dry Weights: [2.0, 2.2, 2.5, 2.7, 3.0]
+Python script executed successfully for Rose
+Diagram for Rose moved to Diagrams/Rose
+Processing plant: Tulip
+Output for Tulip:
+/home/evya133/LINUX_Course_Project/Work/Q4/../Q2/plant_plots.py:27: UserWarning: FigureCanvasAgg is non-interactive, and thus cannot be shown
+  plt.show()
+Plant: Tulip
+Heights: [30.0, 35.0, 40.0, 42.0]
+Leaf Counts: [12, 15, 18, 20]
+Dry Weights: [1.5, 1.6, 1.7, 1.8]
+Python script executed successfully for Tulip
+Diagram for Tulip moved to Diagrams/Tulip
+Processing plant: Sunflower
+Output for Sunflower:
+/home/evya133/LINUX_Course_Project/Work/Q4/../Q2/plant_plots.py:27: UserWarning: FigureCanvasAgg is non-interactive, and thus cannot be shown
+  plt.show()
+Plant: Sunflower
+Heights: [120.0, 125.0, 130.0, 135.0]
+Leaf Counts: [50, 55, 60, 65]
+Dry Weights: [5.0, 5.5, 6.0, 6.5]
+Python script executed successfully for Sunflower
+Diagram for Sunflower moved to Diagrams/Sunflower
+Processing plant: Daffodil
+Output for Daffodil:
+/home/evya133/LINUX_Course_Project/Work/Q4/../Q2/plant_plots.py:27: UserWarning: FigureCanvasAgg is non-interactive, and thus cannot be shown
+  plt.show()
+Plant: Daffodil
+Heights: [40.0, 45.0, 50.0, 55.0]
+Leaf Counts: [15, 18, 20, 22]
+Dry Weights: [1.8, 2.0, 2.2, 2.5]
+Python script executed successfully for Daffodil
+Diagram for Daffodil moved to Diagrams/Daffodil
+Processing plant: Lily
+Output for Lily:
+/home/evya133/LINUX_Course_Project/Work/Q4/../Q2/plant_plots.py:27: UserWarning: FigureCanvasAgg is non-interactive, and thus cannot be shown
+  plt.show()
+Plant: Lily
+Heights: [60.0, 65.0, 70.0]
+Leaf Counts: [20, 22, 24]
+Dry Weights: [2.5, 2.7, 3.0]
+Python script executed successfully for Lily
+Diagram for Lily moved to Diagrams/Lily
+Diagrams compressed into backup file: ../../BACKUPS/Diagrams_20250314_181724.tar.gz
+Processing completed at Fri Mar 14 18:17:24 IST 2025
